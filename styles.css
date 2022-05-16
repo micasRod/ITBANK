@@ -73,3 +73,11 @@ header{
     top : 6px;
 }
 
+.cuadro_de_buscador{
+    text-align: center;
+}
+
+.buscador{
+    width: 300px;
+    text-align: center;
+}
