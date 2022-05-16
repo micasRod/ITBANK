@@ -1,0 +1,61 @@
+.inline-block{
+    display: inline;
+}
+
+.botones{
+    background-color: bisque;
+    display: inline-block;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    padding: 5px;
+    border-width: 3.5px;
+}
+
+.inversiones{
+    background-color: bisque;
+    display: inline-block;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    padding: 5px;
+    border-width: 3.5px;
+    height: 160px;
+}
+
+.accesos{
+    
+   display: inline;
+    background-color: bisque;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    padding: 5px;
+    border-width: 3.5px;
+    height: 15px;
+    justify-content: space-around;
+    
+}
+
+.logo{
+    font-size: 30px;
+    float: right;
+}
+
+.menu{
+    display: inline;
+}
+
+.titulo{
+    display: inline;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+header{
+    background-color: rgb(162, 162, 246);
+    height: 50px;
+
+}
