@@ -21,6 +21,8 @@
     padding: 5px;
     border-width: 3.5px;
     height: 160px;
+    position : relative ; 
+    top : -68px ;
 }
 
 .accesos{
@@ -44,11 +46,15 @@
 
 .menu{
     display: inline;
+    position : relative;
+    top : 15px;
 }
 
 .titulo{
     display: inline;
     text-align: center;
+    position : relative;
+    top : 15px;
 }
 
 .center{
@@ -59,3 +65,11 @@ header{
     height: 50px;
 
 }
+
+.logo2 {
+    font-size: 30px;
+    float: left;
+    position : relative;
+    top : 6px;
+}
+
