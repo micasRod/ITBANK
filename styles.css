@@ -1,39 +1,87 @@
-.inline-block{
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*HEADER*/
+
+.contenedorHeader{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 92px;
+}
+
+header{
+    background-color: rgb(121, 113, 200);
+    height: 50px;
+    font-family:Arial,sans-serif;
+    font-size: 22px;
+}
+
+.extra{
+    display: flex;
+    grid-column: 11/13;
+    grid-row: 1/2;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo2 {
+    font-size: 30px;
+    float: left;
+    position : relative;
+    top : 6px;
+}
+
+.menu{
     display: inline;
+    position : relative;
+    font-size: 25px;
 }
 
-.botones{
-    background-color: rgb(162, 162, 255);
-    display: inline-block;
-    border-radius: 10px;
-    border-color: rgb(35, 0, 100);
-    border-style: solid;
-    padding: 15px;
-    border-width: 1px;
+.titulo{
+    display: flex;
+    text-align: center;
+    font-size: 35px;
+    grid-column: 6/8;
+    grid-row: 1/3;
+    justify-content: center;
+    align-items: center;
 }
 
-a:link{
-    color: red;
-    text-decoration: none;
-}
-a:hover{
-    color: red;
-}
-.inversiones{
-    background-color: rgb(162, 162, 255);
-    display: inline-block;
-    border-radius: 10px;
-    border-color: rgb(35, 0, 100);
-    border-style: solid;
-    padding: 15px;
-    border-width: 1px;
-    height: 160px;
-    position : relative ; 
-    top : -68px ;
+.titulo img{
+    height: 35px;
+    width: 35px;
 }
 
-.accesos{
-    
+.logo{
+    font-size: 30px;
+    float: right;
+}
+
+/*MAIN*/
+
+.contenedorMain{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background: linear-gradient(to bottom, rgb(121, 113, 200), white);
+}
+
+.cuadro_de_buscador{
+    text-align: center;
+    grid-column: 11/13;
+}
+
+.accesos{ 
     display: inline-flex;
     background-color: rgb(162, 162, 255);
     border-radius: 10px;
@@ -45,47 +93,36 @@ a:hover{
     justify-content: space-around;
     background-image: linear-gradient(to right,#fff, rgb(184, 184, 245));
     font-family: Arial, sans-serif;
-    font-size: 22px;}
-
-.logo{
-    font-size: 30px;
-    float: right;
+    font-size: 22px;
 }
 
-.menu{
-    display: inline;
-    position : relative;
-    font-size: 25px;
-}
-
-.titulo{
-    display: inline;
-    text-align: center;
-    position : relative;
-    top : 15px;
-    margin-left: 40%;
-    font-size: 35px;
+.accesosDirect{
+    grid-column: 5/9;
+    grid-row: 1/2;
 }
 
 .center{
     text-align: center;
-}
-header{
-    background-color: rgb(84, 74, 179);
-    height: 50px;
-    font-family:Arial,sans-serif;
-    font-size: 22px;
+    grid-row: 4/8;
+    grid-column: 5/9;
 }
 
-.logo2 {
-    font-size: 30px;
-    float: left;
-    position : relative;
-    top : 6px;
-}
+.contenedorMenu{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
 
-.cuadro_de_buscador{
-    text-align: center;
+.botones{
+    background-color: rgb(162, 162, 255);
+    display: inline-block;
+    border-radius: 10px;
+    border-color: rgb(35, 0, 100);
+    border-style: solid;
+    padding: 15px;
+    border-width: 1px;
 }
 
 .buscador{
@@ -100,12 +137,70 @@ h3{
 p{
   font-family: Arial,sans-serif;
   font-size: 18px;}
-  
-  .titulo img{
-      height: 40px;
-      position:absolute;
-      top: -5px;
-      left: -50px;
 
-  }
+
+a:link{
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+
+.inversiones{
+    background-color: rgb(162, 162, 255);
+    display: inline-block;
+    border-radius: 10px;
+    border-color: rgb(35, 0, 100);
+    border-style: solid;
+    padding: 15px;
+    border-width: 1px;
+    height: 160px;
+    position : relative ; 
+    top : -68px ;
+}
+
+/*FOOTER*/
+
+.contenedorFooter{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 50px;
+    bottom: 0;
+    position: fixed;
+    justify-content: center;
+    background: #7971c8;
+    align-items: center;
+    width: 100%;
+}
+
+.tyc{
+    grid-column: 1/3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.redesSociales{
+    grid-column: 10/13;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
