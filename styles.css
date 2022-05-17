@@ -55,7 +55,6 @@ a:hover{
 .menu{
     display: inline;
     position : relative;
-    top : 15px;
     font-size: 25px;
 }
 
@@ -101,3 +100,12 @@ h3{
 p{
   font-family: Arial,sans-serif;
   font-size: 18px;}
+  
+  .titulo img{
+      height: 40px;
+      position:absolute;
+      top: -5px;
+      left: -50px;
+
+  }
+  
