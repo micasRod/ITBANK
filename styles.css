@@ -91,10 +91,25 @@ header{
     display: flex;
 }
 
+.tyc:hover{
+    cursor: pointer;
+    color: #12058b;
+}
+
 .redesSociales{
     grid-column: 10/13;
 }
 
+.imagen{
+    height: 37px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(178, 52, 210);
+}
+
+.imagen:hover{
+    cursor: pointer;
+}
 
 
 
