@@ -20,7 +20,7 @@ background-size: cover;
     grid-template-rows: auto;
     grid-template-columns: repeat(6, 1fr) ;
     margin: 30px 65px 50px 65px;
-    border: 2px solid #c9c9c9;
+    border: 0.6px solid #544c4c;
     border-radius: 11px;
 }
 
@@ -63,7 +63,7 @@ background-size: cover;
     grid-template-rows: 220px;
     grid-template-columns: repeat(4, 1fr) ;
     margin: 30px 65px 50px 65px;
-    border: 2px solid #c9c9c9;
+    border: 0.6px solid #544c4c;
     border-radius: 11px;
 }
 
