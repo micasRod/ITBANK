@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Itbank</title>
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="copia_index.css">
+    <title>Itbank</title>
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="body">
   <header>
      <div class="container"><nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
@@ -49,7 +61,7 @@
         </div>
       </div>
     </nav>
-  </div>   
+  </div><br>
  </header>    
 
 
@@ -65,82 +77,99 @@
       <a href="">⊗</a>
       <a href="">💬</a>
       <a href="">🙋‍♂️</a>
-    </div> 
-  -->
-            
-	
+    </div> -->
 
-  <main class="container">
+    <!------------SECCION:    ACCESOS DIRECTOS   -->
 
-        
-    <section class="container">
-      <h1>Accesos directos</h1>
-      <a href=""><div class="accesos">Transferencia</div></a>
-      <a href=""><div class="accesos">Pago de servicios</div></a>
-      <a href=""><div class="accesos">Préstamos</div></a>
-      <a href=""><div class="accesos">Plazo fijo</div></a>
-      <a href=""><div class="accesos">Seguros</div></a>   
+    <section class="contenedor-accesos-directos">
+        <div class="accesos-directos"><h4>Accesos Directos</h4></div>
+        <div class="grid-container-accesos-directos">
+            <div class="grid-item-accesos-directos"><img src="transferencia2.png"><br>Transferencias</div>
+            <div class="grid-item-accesos-directos"><img src="transferencia.png"><br>Pagos de servicios</div>
+            <div class="grid-item-accesos-directos"><img src="prestamo.png"><br>Prestamos</div>
+            <div class="grid-item-accesos-directos"><img src="seguros.png"><br>Seguros</div>
+            <div class="grid-item-accesos-directos"><img src="plazosfijjos.png"><br>Plazos fijos</div>
+            <div class="grid-item-accesos-directos"><img src="calendario.png"><br>Turnos online</div>
+        </div>
     </section>
-    
-    <h1>Tus productos</h1>
-    
-    <section class="container-fluid">
-      
-      <div class = "row">
-          <div class = "col-4 ">
-            <button type="button" class="btn btn-light form-control">
-              <h3>Tarjeta 1</h3>
-              <p>Ultimos consumos</p>
-              <p>Cierre / Vencimiento</p>
-              <p>$ Últimos consumos</p>
-            </button>
-          </div>
 
-          <div class = "col-4  ">
-            <button type="button" class="btn btn-light form-control">
-              <h3>Tarjeta 2</h3>
-              <p>Ultimos consumos</p>
-              <p>Cierre / Vencimiento</p>
-              <p>$ Últimos consumos</p>
-            </button>
-          </div>
-        
-          <div class = "col-4  ">
-            <div class="row">
-              <div class="d-grid gap-2 mx-auto">
-                <button type="button" class="btn btn-light form-control ">
-                  <h3>Seguros</h3>
-                  <p>Cotizá tu seguro</p>
-                </button>
-              </div>
-            </div>
+    <!------------SECCION:    TUS PRODUCTOS   -->
 
-            <div class="row">
-              <div class="d-grid gap-2 mx-auto ">
-                <button type="button " class="btn btn-light form-control ">
-                  <h3>Inversiones</h3>
-                  <p>Tenencias consolidadas</p>
-                </button>
-              </div>
-            </div>
-          </div>
-        
+    <!--<section class="contenedor-tus-productos">
+      <div class="tus-productos"><h4>Tus Productos</h4></div>
 
+      <div class="botones">
+        <h3>Tarjeta 1</h3>
+        <p>Ultimos consumos</p>
+        <p>Cierre / Vencimiento</p>
+        <p>$ Últimos consumos</p>
       </div>
-      
-    </section>
 
-  </main> 
+      <div class="botones">
+        <h3>Tarjeta 2</h3>
+        <p>Ultimos consumos</p>
+        <p>Cierre / Vencimiento</p>
+        <p>$ Últimos consumos</p>
+      </div>
+
+      <div class="inversiones">
+        <h3>Inversiones</h3>
+        <p>Tenencias consolidadas</p>
+      </div>
+
+    </section>-->
+    
+<section class="contenedor-tus-productos">
+    <div class="tus-productos"><h4>Tus Productos</h4></div>
+    <div class="grid-container-tus-productos">
+
+        <div class="grid-item-tus-productos">
+            <h3>054-681359/5</h3>
+            <p>cuenta unica</p>
+            <p>ver transacciones</p>
+            <h2>$0,00</h2>
+            <h2>u$s 0,00</h2>
+        </div>
+
+        <div class="grid-item-tus-productos">
+            <h3>Visa XXXX</h3>
+            <p>ultimos consumos</p>
+            <p>cierra 26/05/2022-venc 03/06/2022</p>
+            <h2>$0,00</h2>
+            <h2>u$s 0,00</h2>
+        </div>
+
+        <div class="grid-item-tus-productos">
+            <h3>Amex XXXX</h3>
+            <p>ultimos consumos</p>
+            <p>cierra 26/05/2022-venc 03/06/2022</p>
+            <h2>$0,00</h2>
+            <h2>u$s 0,00</h2>
+        </div>
+
+        <div class="grid-item-tus-productos">
+            <h3>ITBANK+</h3><br>
+            <br>
+            <h4>Tenes xxxx</h4>
+            <h4>puntos</h4>
+        </div>
+
+    </div>
+
+
+
+    <!--
+        ----------FOOTER------------------
+    -->
     
   <footer class="contenedorFooter">
-    <div class="tyc">Terminos y Condiciones</div>
+    <div class="tyc"><p>Terminos y Condiciones</p></div>
     <div class="redesSociales">
       <a href="https://www.facebook.com" target="_blank"><img class="imagen" src="logo_facebook.png"></a>
       <a href="https://www.twitter.com" target="_blank"><img class="imagen" src="logo_twitter.png"></a>
     </div>
   </footer>
-    
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
