@@ -1,0 +1,130 @@
+.body{
+    background: url(..//edificio.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+/********ACCESOS DIRECTOS******************/
+
+.accesos-directos{
+    color: white;
+    margin-left: 65px;
+    margin-top: 50px;
+}
+
+.grid-container-accesos-directos{
+    display: grid;
+    background-color: white;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(6, 1fr) ;
+    margin: 30px 65px 50px 65px;
+    border: 2px solid #c9c9c9;
+    border-radius: 11px;
+}
+
+.grid-container-accesos-directos img{
+    height: 30px;
+}
+
+
+.grid-item-accesos-directos{
+    /*border: 0.5px solid #dedcdc;*/
+    font-size: 24px;
+    font-family: 'Roboto Flex', sans-serif;
+    align-self: center;
+    justify-self: center;
+    /*  ****PROBLEMA*****NO PUEDO CENTRARLO Y DARLE BORDES A LA VEZ*/
+    padding: 14px;
+    color: #000004;
+}
+
+.grid-item-accesos-directos:hover{
+    background-color: rgb(237, 239, 242);
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+/*--------------------------------------------
+-------TUS PRODUCTOS--------------------------*/
+
+.tus-productos{
+    margin-left: 65px;
+    color: white;
+    margin-top: 30px;
+}
+
+.grid-container-tus-productos{
+    display: grid;
+    color: black;
+    background-color: white;
+    grid-template-rows: 220px;
+    grid-template-columns: repeat(4, 1fr) ;
+    margin: 30px 65px 50px 65px;
+    border: 2px solid #c9c9c9;
+    border-radius: 11px;
+}
+
+.grid-item-tus-productos{
+    align-items: center;
+    justify-self: center;
+}
+
+.grid-item-tus-productos h3{
+    color: rgb(43, 43, 176);
+    padding-top: 1px;
+}
+
+.grid-item-tus-productos h2{
+    padding-bottom: 1px;
+}
+
+.grid-item-tus-productos:hover{
+    background-color: rgb(237, 239, 242);
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+
+/***********************FOOTER*******************/
+.contenedorFooter{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 50px;
+    bottom: 0;
+    position: fixed;
+    justify-content: center;
+    background: white;
+    align-items: center;
+    width: 100%;
+}
+
+.tyc{
+    grid-column: 1/3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.tyc:hover{
+    cursor: pointer;
+    color: #180a94;
+}
+
+.redesSociales{
+    grid-column: 10/13;
+}
+
+.imagen{
+    height: 37px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #c9c9c9;
+}
+
+.imagen:hover{
+    cursor: pointer;
+}
