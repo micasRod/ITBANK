@@ -3,6 +3,10 @@
     background-size: cover;
 }
 
+.container-fluid {
+    background-color: #fff;
+}
+
 /********ACCESOS DIRECTOS******************/
 
 .accesos-directos{
