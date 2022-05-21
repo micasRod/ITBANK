@@ -1,6 +1,10 @@
 .body{
-    background: url(edificio.jpg) no-repeat center center fixed;
+    background: url(../images/edificio.jpg) no-repeat center center fixed;
     background-size: cover;
+}
+
+.container-fluid {
+    background-color: #fff;
 }
 
 /********ACCESOS DIRECTOS******************/
