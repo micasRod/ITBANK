@@ -91,7 +91,19 @@
 
 
 /***********************FOOTER*******************/
-.contenedorFooter{
+
+.listafooter{
+    display: flex;
+    list-style: none; /*sin los puntitos*/
+    justify-content: space-around;
+}
+
+.afooter{
+    text-decoration: none;
+    color:white;
+    line-height: 20px;
+}
+/*.contenedorFooter{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     height: 50px;
