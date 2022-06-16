@@ -7,6 +7,8 @@
     background-color: #fff;
 }
 
+
+
 /********ACCESOS DIRECTOS******************/
 
 .accesos-directos{
@@ -87,6 +89,31 @@
     cursor: pointer;
     box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
     transition: all 0.3s ease;
+}
+
+.sizeContainer{
+    height: 150px;
+    width: 200px;
+}
+
+.sizeNotices{
+    height: 200px;
+    width: 200px;
+}
+
+.sizeTitle{
+    height: 30px;
+    width: 100%;
+}
+
+.sizePrice{
+    height: 50px;
+    width: 100%;
+}
+
+.spaceItem{
+    margin: 2px;
+    padding: 2px;
 }
 
 
