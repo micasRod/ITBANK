@@ -103,6 +103,21 @@
     color:white;
     line-height: 20px;
 }
+
+
+/*STYLE DE HTML*/
+
+.row img{max-height: 30px;
+    min-height: 20px;
+    }
+    .border-end:hover {
+      background-color: rgb(237, 239, 242);
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    }
+
+
 /*.contenedorFooter{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
