@@ -11,6 +11,10 @@
 
 /********ACCESOS DIRECTOS******************/
 
+.fecha{
+    color: red;
+}
+
 .accesos-directos{
     color: white;
     margin-left: 65px;
