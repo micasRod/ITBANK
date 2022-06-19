@@ -94,7 +94,7 @@ var variacionTurista = document.getElementById('variacionTurista');
 
 var fecha = new Date();
 
-document.getElementById("fecha").innerHTML = `Actualizado ${fecha.toLocaleString()}`;
+document.getElementById("fecha").innerHTML = `Actualizado: ${fecha.toLocaleString()}`;
 
 
 
