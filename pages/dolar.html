@@ -10,251 +10,115 @@
 </head>
 <body class="body">
 
-    <header>
-
-        <div class="container pb-5">
-            <div class="row">
-                <div class="col bg-light d-flex justify-content-center">
-                    <h1>ITDOLAR</h1>
-                </div>
+  <header>
+    <div class="container-fluid border border-primary border-2 w-75 mb-4 mt-1 pt-2 bg-dark justify-center text-center rounded shadow-lg text-white ">
+      <div class="row">
+        <div class="col">
+          <p class="fs-1 fw-semibold ">ITDOLAR</p>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+  
+  <main>
+    <div class="container-fluid mb-4">
+      <div class="row">
+  
+        <div class="col d-flex justify-content-evenly">
+          <div class="card shadow-lg w-75 mb-2" >
+            <div class="card-header  bg-dark text-white fs-3">Dolar Oficial</div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Precio compra:<p id="oficialPrecioCompra"></p></li>
+                <li class="list-group-item">Precio venta:<p id="oficialPrecioVenta"></p></li>
+                <li class="list-group-item">Variación:<p id="oficialVariacion"></p></li>
+              </ul>
             </div>
+          </div>
         </div>
-
-        </div>
-
-    </header>
-
-
-    <main>
-
-        <div class="container pb-5">
-            <div class="row justify-content-center gx-5">
-                <div class="col-4 bg-success d-flex justify-content-center sizeContainer p-1 m-1">
-                    <div class="container">
-                          <div class="row sizeTitle spaceItem">
-                            <div class="col-12 d-flex justify-content-center">
-                                <h3>DOLAR OFICIAL</h3>
-                            </div>
-                          </div>
-                          <div class="row sizePrice spaceItem">
-                            <div class="col-6 d-flex justify-content-center">
-                              <ul class="list-unstyled">
-                                <ld> Precio Compra</ld>
-                                <li id="oficialPrecioCompra"></li>
-                              </ul>
-                            </div>
-                            <div class="col-6 d-flex justify-content-center">
-                              <ul class="list-unstyled">
-                                <ld>Precio Venta</ld>
-                                <li id="oficialPrecioVenta"></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="row spaceItem">
-                            <div class="col-12 d-flex justify-content-center">
-                              <ul class="list-unstyled">
-                                <ld> Variacion</ld>
-                                <li id="oficialVariacion"></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="row ">
-                          <div class="col-12 d-flex justify-content-center" id="fecha"></div>                            
-                          </div>
-                       </div>
-                </div>
-                <div class="col-4 bg-success d-flex justify-content-center sizeContainer p-1 m-1">
-                    <div class="container">
-                        <div class="row sizeTitle spaceItem">
-                          <div class="col-12 d-flex justify-content-center">
-                              <h3>DOLAR BLUE</h3>
-                          </div>
-                        </div>
-                        <div class="row sizePrice spaceItem">
-                          <div class="col-6 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld> Precio Compra</ld>
-                              <li id="blueCompra"></li>
-                            </ul>
-                          </div>
-                          <div class="col-6 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld> Precio Venta</ld>
-                              <li id="blueVenta"></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row spaceItem">
-                          <div class="col-12 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld> Variacion</ld>
-                              <li id="blueVariacion"></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row ">
-                          <div class="col-12 d-flex justify-content-center" id="fecha"></div>
-                        </div>
-                     </div>
-                </div>
-                <div class="col-4 bg-success d-flex justify-content-center sizeContainer p-1 m-1">
-                    <div class="container">
-                        <div class="row sizeTitle spaceItem">
-                          <div class="col-12 d-flex justify-content-center">
-                              <h3>CONTADO CON LIQUI</h3>
-                          </div>
-                        </div>
-                        <div class="row sizePrice spaceItem">
-                          <div class="col-6 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld>Compra</ld>
-                              <li id="compraLiqui"></li>
-                            </ul>
-                          </div>
-                          <div class="col-6 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld> Venta</ld>
-                              <li id="ventaLiqui"></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row spaceItem">
-                          <div class="col-12 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld> Variacion</ld>
-                              <li id="variacionLiqui"></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row ">
-                          <div class="col-12 d-flex justify-content-center" id="date"></div>
-                        </div>
-                     </div>
-                </div>
-                <div class="col-4 bg-success d-flex justify-content-center sizeContainer p-1 m-1">
-                    <div class="container">
-                        <div class="row sizeTitle spaceItem">
-                          <div class="col-12 d-flex justify-content-center">
-                              <h3>DOLAR PROMEDIO</h3>
-                          </div>
-                        </div>
-                        <div class="row sizePrice spaceItem">
-                          <div class="col-6 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld>Compra</ld>
-                              <li id="compraPromedio"></li>
-                            </ul>
-                          </div>
-                          <div class="col-6 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld>Venta</ld>
-                              <li id="ventaPromedio"></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row spaceItem">
-                          <div class="col-12 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld> Variacion</ld>
-                              <li id="variacionPromedio"></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row ">
-                          <div class="col-12 d-flex justify-content-center" id="date"></div>
-                        </div>
-                     </div>
-                </div>
-                <div class="col-4 bg-success d-flex justify-content-center sizeContainer p-1 m-1">
-                    <div class="container">
-                        <div class="row sizeTitle spaceItem">
-                          <div class="col-12 d-flex justify-content-center">
-                              <h3>DOLAR BOLSA</h3>
-                          </div>
-                        </div>
-                        <div class="row sizePrice spaceItem">
-                          <div class="col-6 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld> Compra</ld>
-                              <li id="compraBolsa"></li>
-                            </ul>
-                          </div>
-                          <div class="col-6 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld>Venta</ld>
-                              <li id="ventaBolsa"></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row spaceItem">
-                          <div class="col-12 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld> Variacion</ld>
-                              <li id="variacionBolsa"></li>
-                            </ul>
-                          </div>
-                         </div>
-                        <div class="row ">
-                          <div class="col-12 d-flex justify-content-center" id="date"></div>
-                        </div>
-                     </div>
-                </div>
-                <div class="col-4 bg-success d-flex justify-content-center sizeContainer p-1 m-1">
-                    <div class="container">
-                        <div class="row sizeTitle spaceItem">
-                          <div class="col-12 d-flex justify-content-center">
-                              <h3>DOLAR TURISTA</h3>
-                          </div>
-                        </div>
-                        <div class="row sizePrice spaceItem">
-                          <div class="col-6 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld>Venta</ld>
-                              <li id="ventaTurista"></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row spaceItem">
-                          <div class="col-12 d-flex justify-content-center">
-                            <ul class="list-unstyled">
-                              <ld> Variacion</ld>
-                              <li id="variacionTurista"></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row ">
-                          <div class="col-12 d-flex justify-content-center" id="date"></div>
-                        </div>
-                     </div>
-                </div>
+  
+        <div class="col d-flex justify-content-evenly">
+          <div class="card shadow-lg w-75 mb-2">
+            <div class="card-header bg-dark text-white fs-3">Dolar Blue</div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Precio compra:<p id="blueCompra"></p></li>
+                <li class="list-group-item">Precio venta:<p id="blueVenta"></p></li>
+                <li class="list-group-item">Variación:<p id="blueVariacion"></p></li>
+              </ul>
             </div>
+          </div>
         </div>
-
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col bg-light d-flex justify-content-center sizeNotices p-1 m-1">NOTICIA DOLAR</div>
-                <div class="col bg-light d-flex justify-content-center sizeNotices p-1 m-1">NOTICIA DOLAR</div>
-                <div class="col bg-light d-flex justify-content-center sizeNotices p-1 m-1">NOTICIA DOLAR</div>
-                <div class="col bg-light d-flex justify-content-center sizeNotices p-1 m-1">NOTICIA DOLAR</div>  
+  
+      </div>
+  
+      <div class="row">
+  
+        <div class="col d-flex justify-content-evenly">
+          <div class="card shadow-lg w-75 mb-2">
+            <div class="card-header bg-dark text-white fs-3">Compra con liquidez</div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Precio compra:<p id="compraLiqui"></p></li>
+                <li class="list-group-item">Precio venta:<p id="ventaLiqui"></p></li>
+                <li class="list-group-item">Variación:<p id="variacionLiqui"></p></li>
+              </ul>
             </div>
+          </div>
         </div>
-
-    </main>
-
-    <footer>
-
-        <div class="container pt-5">
-            <div class="row justify-content-center">
-                <div class="col bg-light d-flex justify-content-center">
-                TERMINOS Y CONDICIONES
-                </div>
+  
+        <div class="col d-flex justify-content-evenly">
+          <div class="card shadow-lg w-75 mb-2">
+            <div class="card-header bg-dark text-white fs-3">Dolar Promedio</div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Precio compra:<p id="compraPromedio"></p></li>
+                <li class="list-group-item">Precio venta:<p id="ventaPromedio"></p></li>
+                <li class="list-group-item">Variación:<p id="variacionPromedio"></p></li>
+              </ul>
             </div>
+          </div>
         </div>
-
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="../scripts/index.js"></script>
-</body>
+  
+      </div>
+  
+      <div class="row">
+  
+        <div class="col d-flex justify-content-evenly">
+          <div class="card shadow-lg w-75 mb-2">
+            <div class="card-header bg-dark text-white fs-3">Dolar Bolsa</div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Precio compra:<p id="compraBolsa"></p></li>
+                <li class="list-group-item">Precio venta:<p id="ventaBolsa"></p></li>
+                <li class="list-group-item">Variación:<p id="variacionBolsa"></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col d-flex justify-content-evenly">
+          <div class="card shadow-lg w-75 mb-2">
+            <div class="card-header bg-dark text-white fs-3">Dolar Turista</div>
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Precio venta:<p id="ventaTurista"></p></li>
+                <li class="list-group-item">Variación:<p id="variacionTurista"></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </main>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="../scripts/index.js"></script>
+  </body>
 
 </html>
