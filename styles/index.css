@@ -98,6 +98,8 @@
 .sizeContainer{
     height: 150px;
     width: 200px;
+    color: papayawhip;
+    font-style: italic;
 }
 
 .sizeNotices{
@@ -108,6 +110,7 @@
 .sizeTitle{
     height: 30px;
     width: 100%;
+    color: mintcream;
 }
 
 .sizePrice{
