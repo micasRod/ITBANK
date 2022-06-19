@@ -52,7 +52,7 @@ var variacionBolsa = document.getElementById('variacionBolsa');
 var ventaTurista = document.getElementById('ventaTurista');
 var variacionTurista = document.getElementById('variacionTurista');
 
-function traer() {
+    let url = 'https://www.dolarsi.com/api/api.php?type=valoresprincipales'
     fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
     .then(res => res.json())
     .then(data => {
@@ -86,7 +86,7 @@ function traer() {
         ventaTurista.textContent = data[6].casa.venta;
         variacionTurista.textContent = data[6].casa.variacion;
     })
-}
+
 
 
 
