@@ -76,14 +76,50 @@ var variacionTurista = document.getElementById('variacionTurista');
     })
 
 
-
-
+    
 //fecha actualizada//
 
 var fecha = new Date();
 
 document.getElementById("fecha").innerHTML = `Actualizado: ${fecha.toLocaleString()}`;
 
+setInterval(() =>{
+    this.url = 'https://www.dolarsi.com/api/api.php?type=valoresprincipales'
+    fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+        /* --- Dolar Oficial---*/
+        oficialPrecioCompra.textContent = "$"+data[0].casa.compra;
+        oficialPrecioVenta.textContent = "$"+data[0].casa.venta;
+        oficialVariacion.textContent = data[0].casa.variacion;
+
+        /* --- Dolar Blue ---*/ 
+        blueCompra.textContent =  "$"+data[1].casa.compra;
+        blueVenta.textContent = "$"+ data[1].casa.venta;
+        blueVariacion.textContent = data[1].casa.variacion;
+
+        /* --- Contado con Liqui ---*/ 
+        compraLiqui.textContent = "$"+ data[3].casa.compra;
+        ventaLiqui.textContent = "$"+ data[3].casa.venta;
+        variacionLiqui.textContent = data[3].casa.variacion;
+
+        /* --- Dolar Promedio ---*/ 
+        compraPromedio.textContent =  "$"+data[7].casa.compra;
+        ventaPromedio.textContent =  "$"+data[7].casa.venta;
+        variacionPromedio.textContent = data[7].casa.variacion;
+
+        /* --- Dolsar Bolsa ---*/ 
+        compraBolsa.textContent =  "$"+data[4].casa.compra;
+        ventaBolsa.textContent =  "$"+data[4].casa.venta;
+        variacionBolsa.textContent = data[4].casa.variacion;
+
+        /* --- Dolar Turista */
+        ventaTurista.textContent = "$"+data[6].casa.venta;
+        variacionTurista.textContent = data[6].casa.variacion;
+    })
+
+},5000) 
 
 
 
